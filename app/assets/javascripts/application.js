@@ -10,8 +10,14 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
-//= require bootstrap-sprockets
+//= require jquery-3.1.1.min
+//= require parallax
+//= require typed.min
+//= require isotope.min
+//= require lightbox.min
+//= require granim.min
+//= require countdown.min
+//= require smooth-scroll.min
+//= require scripts
 //= require turbolinks
 //= require_tree .
