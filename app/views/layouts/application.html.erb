@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700" rel="stylesheet" type="text/css">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body class="scroll-assist" data-smooth-scroll-offset="77">
-  <a id="start"></a>
+    <a id="start"></a>
     <%= render 'layouts/topbar' %>
     <%= render 'layouts/navigation' %>
-    <div class="main-container">
+  <div class="main-container">
+    <a id="home-header" class="in-page-link"></a>
       <%= yield %>
       <%= render 'layouts/footer' %>
     </div>

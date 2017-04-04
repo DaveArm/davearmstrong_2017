@@ -20,4 +20,3 @@
 //= require smooth-scroll.min
 //= require scripts
 //= require turbolinks
-//= require_tree .
