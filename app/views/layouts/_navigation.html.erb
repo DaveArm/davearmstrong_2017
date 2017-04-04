@@ -5,10 +5,8 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-3 col-sm-2">
-          <a href="index.html">
-            <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
-            <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
-          </a>
+          <%= link_to(image_tag("logo-dark.png"), root_path, class: "logo logo-dark") %>
+          <%= link_to(image_tag("logo-light.png"), root_path, class: "logo logo-light") %>
         </div>
         <div class="col-xs-9 col-sm-10 text-right">
           <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
@@ -26,10 +24,8 @@
       <div class="row">
         <div class="col-md-1 col-sm-2 hidden-xs">
           <div class="bar__module">
-            <a href="index.html">
-              <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
-              <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
-            </a>
+            <%= link_to(image_tag("logo-dark.png"), root_path, class: "logo logo-dark") %>
+            <%= link_to(image_tag("logo-light.png"), root_path, class: "logo logo-light") %>
           </div>
           <!--end module-->
         </div>
@@ -63,12 +59,12 @@
                       <div class="dropdown__content dropdown__content--lg col-md-8">
                         <div class="pos-absolute col-md-5 imagebg hidden-sm hidden-xs" data-overlay="6">
                           <div class="background-image-holder">
-                            <img alt="background" src="img/inner-6.jpg" />
+                            <%= image_tag("navBackground.jpg", alt: "DAUX Nav Background")%>
                           </div>
                           <div class="container pos-vertical-center">
                             <div class="row">
                               <div class="col-md-10 col-md-offset-1">
-                                <img alt="Logo" src="img/logo-light.png" class="image--xxs" />
+                                <%= image_tag("logo-light.png", alt: "DAUX Logo", class: "image--xxs")%>
                                 <span class="h3 color--white">Monthly email full of free resources for the creative professional</span>
                                 <a href="#" class="btn btn--primary type--uppercase">
                                                                             <span class="btn__text">
