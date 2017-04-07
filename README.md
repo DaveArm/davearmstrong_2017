@@ -14,4 +14,4 @@ Re-factor the code to leave clean code.
 * Rails version: 5.0.2
 * Ruby version: 2.4.0
 
-/Need to fix js
+/Need to fix js / Update Config
