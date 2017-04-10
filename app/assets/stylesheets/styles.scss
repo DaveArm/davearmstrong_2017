@@ -1,46 +1,5 @@
 /**!**************/
-/**! Contents **/
-/**! 01. Reset **/
-/**! 02. Typography **/
-/**! 03. Position **/
-/**! 04. Element Size **/
-/**! 05. Images **/
-/**! 06. Buttons **/
-/**! 07. Icons **/
-/**! 08. Lists **/
-/**! 09. Lightbox **/
-/**! 10. Menus **/
-/**! 11. Dropdowns **/
-/**! 12. Form Elements **/
-/**! 13. Accordions **/
-/**! 14. Breadcrumbs **/
-/**! 15. Radials **/
-/**! 16. Tabs **/
-/**! 17. Boxes **/
-/**! 18. Sliders Flickity **/
-/**! 19. Hover Elements **/
-/**! 20. Masonry **/
-/**! 21. Modals **/
-/**! 22. Maps **/
-/**! 23. Parallax **/
-/**! 24. Notifications **/
-/**! 25. Video **/
-/**! 26. Colors **/
-/**! 27. Image Blocks **/
-/**! 28. MailChimp & Campaign Monitor **/
-/**! 29. Twitter **/
-/**! 30. Transitions **/
-/**! 31. Switchable Sections **/
-/**! 32. Typed Effect **/
-/**! 33. Gradient BG **/
-/**! 34. Bars **/
-/**! 35. Navigation In Page **/
-/**! 36. Helper Classes **/
-/**! 37. Spacing **/
-/**! 38. Boxed Layout **/
-/**! 39. Theme Overrides **/
-/**!**************/
-/**!**************/
+/**! Updated 10th April 2017 */
 /**!**************/
 /**! 01. Reset **/
 *,
@@ -3542,7 +3501,36 @@ section.unpad--top {
     margin: 0 auto;
   }
 }
-/**! 39. Theme Overrides **/
+/**! 39. Wizard **/
+.wizard__body {
+  list-style: none;
+}
+.wizard__step:not(.active) {
+  display: none;
+}
+.wizard__step .wizard__title {
+  display: none;
+}
+.wizard__controls {
+  overflow: hidden;
+}
+.wizard__controls .wizard-prev {
+  float: left;
+}
+.wizard__controls .wizard-next {
+  float: right;
+}
+.wizard__controls .wizard-prev:hover,
+.wizard__controls .wizard-next:hover {
+  transform: none !important;
+}
+.wizard__controls .wizard-prev.inactive,
+.wizard__controls .wizard-next.inactive {
+  pointer-events: none;
+  opacity: .3;
+  cursor: not-allowed;
+}
+/**! 40. Theme Overrides **/
 /*! -- Stack Customizers -- */
 .box-shadow {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.04);
@@ -6609,6 +6597,67 @@ a[data-lightbox]:hover {
 .bg--dark .process-3:before {
   border-color: #aaa;
 }
+.process-stepper > li {
+  transition: all .3s ease;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.process-stepper > li:before {
+  transition: all .3s ease;
+  content: '';
+  width: 0.92857143em;
+  height: 0.92857143em;
+  background: #ccc;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.92857143em;
+}
+.process-stepper > li:after {
+  transition: all .3s ease;
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background: #ccc;
+  top: 5px;
+  left: 0;
+}
+.process-stepper > li:first-child:after,
+.process-stepper > li:last-child:after {
+  width: 50%;
+}
+.process-stepper > li:first-child:after {
+  left: 50%;
+}
+.process-stepper > li.active:before,
+.process-stepper > li.active:after {
+  background: #ff4f4f;
+}
+.process-stepper > li > span {
+  cursor: default;
+}
+.process-stepper[data-process-steps="6"] > li {
+  width: 16.666666666666667%;
+}
+.process-stepper[data-process-steps="5"] > li {
+  width: 20%;
+}
+.process-stepper[data-process-steps="4"] > li {
+  width: 25%;
+}
+.process-stepper[data-process-steps="3"] > li {
+  width: 33.33333333%;
+}
+.process-stepper[data-process-steps="2"] > li {
+  width: 50%;
+}
+.bg--dark .process-stepper li:not(.active):before,
+.bg--dark .process-stepper li:not(.active):after {
+  background: #585858;
+}
 /*! -- Stack Typed Text -- */
 span + .typed-text.h2 {
   margin-left: 4px;
@@ -7816,6 +7865,10 @@ section.unpad > article .imagebg + div {
 }
 .pagination div[class*='col-'] {
   padding: 0;
+}
+.blog-article-wide:not(:last-child) {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 3.71428571em;
 }
 .masonry-blog-list hr + .masonry__container {
   margin-top: 0;
