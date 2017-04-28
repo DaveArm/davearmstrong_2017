@@ -19,4 +19,4 @@
 //= require countdown.min
 //= require smooth-scroll.min
 //= require scripts
-//= require turbolinks
+// require turbolinks
